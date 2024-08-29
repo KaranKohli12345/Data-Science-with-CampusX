@@ -1,0 +1,56 @@
+import random
+
+class FlashCard:
+
+    def __init__(self):
+        self.fruits = {"Banana": "yellow", "Strawberries": "pink"}
+        self.fruit_and_color = list(self.fruits.items())
+        self.fruit_and_color_random = random.choice(self.fruit_and_color)
+        self.fruit = self.fruit_and_color_random[0]
+        self.color = self.fruit_and_color_random[1]
+
+        print(self.fruit, self.color)
+
+my question is if the golden rule of OOP says that only the object of a class can access the varibales and methods of that class, So how can the random module access the self.fruit_and_color variable.
+
+---------------------------------------------------------------------------------------------
+
+If all user-defined objects of classes are mutable by default, so how 
+
+set1 = {1,2,3, p, p1} is possible with no error, where p and p1 are objects of user-defined class.
+
+Saturday wali class
+
+
+# Pass by reference
+
+class Person:
+
+  def __init__(self, name, gender):
+    self.name = name
+    self.gender = gender
+
+# outside the class --> function
+def greet(person):
+    person.name = 'python'
+    return person
+    
+p = Person('Karan', 'male')
+print(id(p))
+p1 = greet(p)
+print(id(p1))
+
+--------------------------------------------------------------------------------------------------
+
+l = [1,2,3]
+
+print(id(l))
+
+When I run the program again and again it shows different memory locations each time.
+
+
+--------------------------------------------------------------------------------------------------
+
+<class '__main__.ATM'>
+
+what is __main__

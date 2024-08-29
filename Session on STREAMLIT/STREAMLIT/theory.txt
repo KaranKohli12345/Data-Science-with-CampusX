@@ -1,0 +1,32 @@
+What is Streamlit?
+- Python Library used to make websites without using HTML,CSS,JS.
+- Streamlit is used to make qiuck websites.
+
+Benefit
+- Easy
+
+How it works?
+- It is built on top of react.js
+- It uses react for frontend and python for backend.
+
+Flask vs Streamlit
+- Advantage
+    - Flask has lot of technicalities like HTMl,CSS,etc. while Streamlit do not.
+- Disadvantage
+    - less customizations compared to Flask
+
+- For indiviual projects use Streamlit and for company projects use Flask.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

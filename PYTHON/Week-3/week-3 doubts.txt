@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------------------------
+
+l = [1,2,3]
+
+print(id(l))
+
+When I run the program again and again it shows different memory locations each time.
+
+--------------------------------------------------------------------------------------------------
+
+nlp cloud is not working properly.
+
+--------------------------------------------------------------------------------------------------
+
+class Car:
+
+    __count = 0
+    
+    def __init__(self):
+        Car.__count += 1
+
+    def get_count():
+        return Car.__count
+
+maruti = Car()
+bmw = Car()
+honda = Car()
+
+print(Car.get_count())
+
+but why write Car.get_count( ) becoz Car is not object

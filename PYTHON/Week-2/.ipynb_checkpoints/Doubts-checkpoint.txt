@@ -1,0 +1,82 @@
+						Week-2 Doubts
+
+-------------------------------------------------------------------------------------------------------------------
+
+						DOUBT-1
+
+Session on array_interview_questions - Timestamp 1:23
+
+8. Find continuous subarray with a given sum (given non-negative numbers)
+return the starting and ending index of the subarray
+return 1st subarray in case of multiple
+
+Code:
+
+L = [1,22,13,7,9,11,10]
+S = 16
+
+d = {}
+curr_sum = 0
+
+for i in range(len(L)):
+  curr_sum = curr_sum + L[i]
+
+  if (curr_sum - S) in d:
+    print(d[curr_sum - S]+1,i)
+    break
+
+  d[curr_sum] = i
+
+How to approach the second method (above code) and its logic. Also explain why the membership op takes O(1) for set and dictionary part.
+
+-------------------------------------------------------------------------------------------------------------------
+
+						DOUBT-2
+
+
+Session on array_interview_questions:
+
+Where are the solutions of 11-15 of array interview questions?
+
+-------------------------------------------------------------------------------------------------------------------
+
+						DOUBT-3
+
+Session on array_interview_questions:
+
+Where is the link to practice questions mention at 1:43:44 in array_interview_questions.
+Sir said he will provide link but no link is found in description.
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+						DOUBT-4
+
+Week 2 - Interview questions
+
+Where are the solutions of last two ques of the interview session.
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+						DOUBT-5
+
+Week-2 - task 5: Set ques 5
+
+lst1 = {15, 10, 56, 23, 78, 5, 4, 9}
+lst2 = {9, 4, 5, 36, 47, 26, 10, 45, 87}
+
+[i for i in lst1 if i in lst2]
+
+Output: [4, 5, 9, 10]
+
+my ques is: final is a list so why duplicate items are not printed as list allows.
+
+-------------------------------------------------------------------------------------------------------------------
+
+						DOUBT-6
+
+Do paid members also get Youtube membership?
+Is there any official WhatsApp group?
+
+-------------------------------------------------------------------------------------------------------------------

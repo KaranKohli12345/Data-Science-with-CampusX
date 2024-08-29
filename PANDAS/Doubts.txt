@@ -1,0 +1,20 @@
+vk.sort_values(inplace=True)
+
+ValueError: This Series is a view of some other array, to sort in-place you must create a copy
+
+Why am i getting this error but sir doesn't?
+
+
+
+
+why -ve indexing works for string index but not int index?
+
+
+
+
+
+why somewhere we write temp.size and somewhere we write temp.count()?
+
+
+
+What is Categorical data in pandas?

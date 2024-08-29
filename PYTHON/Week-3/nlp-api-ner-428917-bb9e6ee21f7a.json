@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "nlp-api-ner-428917",
+  "private_key_id": "bb9e6ee21f7a5b72c0bbb434c06db80c8306ae72",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDV8y8RWFLWBZlD\n2yjNF27bozvxB+G3abd2PNQfzd3esGGZQIFqK0Vr9ksq2GfMwIoz+DKghq7/FO+2\nQUxqia+xIbJ+ONF0g37ZgGW8DD2XAgwIwK6E8YS/q6enlcTE5lnYVxdbXWLzbMb7\n1/TK8Mq/dGxi1lkACDi9Yw+FEbEMlPEXjqnxi8lRt2/wRefuz2ALR3Bt1xzsdElG\nxujQDvUeTPEaewVoJ0Fiud0NhNkwqk9Od3NuVBBP9Mbzsau9FaqmhhEgYLgngrNr\naphkcFQzyAMrnzalK6tFjPjcQrUdKPaxtCT1KdmyAFqGbjIrbUI88DV3mOWBcx7P\nd0i1CT2hAgMBAAECggEACuEsB28k/jhoae6Q+XXrt5xKQehfUmT8NPVkqY3dzpNM\nUT9aHWCgLfxnJ+F7jMpNNNWWGHrk1viU9IEHTmMcRa8DnT7NKuY9avjII5sBPka2\nvzKyJTVFZXxIgSGA8SzQDIvoNoeODrgdOcUKcA/01W3JjbCd874XSY0qJr+Gr++i\nm05chU2b+BdbAqtjkgWybYw5jWjcHcUXHSgaM/ihq4C48xfTPpjMoCZo3eNpQH+u\nx3cTDer01PGcvSyAadLHFnExM0JiDSPURqSfYfp4GrNIV1osN1ZetSXOKDtHe5ZY\nq9FESef5YAHgmhzc3RHLkzyT8mua2MwjPJ6I1SEHuQKBgQD/LZNFMjXHPLArBwR6\nA1ClhphuaPidGw/UDFfwyOe2kcCVHQ7I6w3ETLuiJi5U35TWqxOAcHZ7ZYvdyZre\nFu+iVQp/VrXpW0otjJTSF8UOdmRAHqYCwWu82t0/PHzNsqZNCG7y+RdI3p+JAoTF\nwEEiVT2kFDdx41rNDCh9+av0SQKBgQDWo5xxUrK20MftIxFOAnFMlb6Lv/2n6mst\nvcXUgRym7CeKpCaWAT/DtAVQqvVLhw/ci7QurbT3ENdqjwk6m3JimVeR8fNzwk+h\nxDnazTuG8Z+2v+z0cEdRDqFzxqqM7VUGChofN/WfbowHX7b+0371vXS8YuMReRcF\nPmULJiZOmQKBgDvjYV3rE84HwzzF79oG7yV5+kpnXnnYwRU+NGFxdVhWysD0SeUD\nrX51l8/NcDBBLPhYvEH3owcA5RuPVkZrUaBinw0Vt6nl3/nitYa9R2VGie62grXA\n2V1AbI6LzqqkE/2eThO+PCXBAeYw7iJPJbo+ETJyADU9a7EV+mbecunpAoGBANI8\nxeLWTwj0ra+gVrXjfJi4YEDAmLOd0MeoB5ujr63syLprGQR7SrrlnQMrwULuk2HC\nUYYbTZNnIqlUW4TVeBAOBRGGPaFYZemcq9Kejj0adQdrLK0tQR2rSAeAQ9PwMATP\nZlDH3kYA4RXj8fnerZAEt9BCyAl4Y00WlaB7CLCZAoGAILx5g6HOl3rpydwM2l2X\nw0cvPlnvynUAKfrPrcmkVGri4htzBqDt1ixBAh3q7JSAOMDD2TAQ8v6VhNOLkBvz\n21bOqXmrJZjL0QInF5hYWTSAFE1oxcQ+RUXruzfLTCKEuAPctqMvdO4qX74xlmMA\n4pz4aUdylhThkT6MHOAikwQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "oop-project-nlp-based@nlp-api-ner-428917.iam.gserviceaccount.com",
+  "client_id": "100751845479090021926",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/oop-project-nlp-based%40nlp-api-ner-428917.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

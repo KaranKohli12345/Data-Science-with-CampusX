@@ -1,0 +1,55 @@
+I have following doubts:
+
+Doubt 1: Week 1 - Session on Time complexity
+timestamp - 1:35
+Last two questions:
+
+T(n) = { 3T(n-1) if n>0
+         1       otherwise 
+
+Here if we increase our input by 1, we are just increasing one more step in our calculation.
+For n = 10 we have to follow 10 steps, for n = 11 we have to follow 11 steps.
+So time complexity should be O(n) according to me. Correct me if I'm missing something.
+
+T(n) = { 2T(n-1) - 1 if n>0
+         1       otherwise 
+
+similarly for this question
+T(0) = 1
+T(1) = 2T(0) - 1 = 1
+T(2) = 2T(1) - 1 = 1
+T(3) = 2T(2) - 1 = 1
+...
+For calculating T(5) we have to calculate 2*T(4) - 1  then 2*2*T(3) -1 and so on...
+It will be completed in 5 steps. 
+For n = 6 there will only be one more step to calculate compared to n = 5.
+so again time complexity should be O(n). 
+
+Doubt 2: Week 1 - Session on Time complexity
+timestamp - 1:22
+I understood time complexity part, but for the code
+
+n = 10
+sum = 0
+
+for i in range(n//2, n):
+    for j in range(2, n, pow(2,j)):
+        sum = sum + n/2
+
+print(sum)
+
+It shows this error:
+
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[3], line 5
+      2 sum = 0
+      4 for i in range(n//2, n):
+----> 5     for j in range(2, n, pow(2,j)):
+      6         sum = sum + n/2
+      8 print(sum)
+
+NameError: name 'j' is not defined
+
+Doubt 3:
+Where will i find the solutions to last 3 questions for week 1 task 2.

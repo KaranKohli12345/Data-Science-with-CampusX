@@ -1,0 +1,5 @@
+why we write Flask(__name__) while making Flask object.
+
+Where is python assessment? There is only numpy assessment.
+
+How to deploy all APIs?

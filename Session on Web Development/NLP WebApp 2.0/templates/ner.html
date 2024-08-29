@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NER</title>
+</head>
+<body>
+    <form action="/perform_ner" method="post">
+        <label>Tyep hete</label><br>
+        <textarea name="ner_ka_text"></textarea><br><br>
+        <button>perform ner</button>
+    </form>
+
+    [('Apple', 'ORG'), ('U.K.', 'GPE'), ('$1 billion', 'MONEY')]
+
+    {% if result %}
+    {% for i in result: %}
+        {% '{} -> {}'.format(i[0], i[1]) %}
+    {% endfor %}   
+    {% endif %}
+    
+</body>
+</html>

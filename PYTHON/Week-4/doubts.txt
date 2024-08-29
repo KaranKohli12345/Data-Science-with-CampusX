@@ -1,0 +1,10 @@
+why am I getting like this with json for list  and ductionary:
+
+
+# deserializing
+
+import json
+
+with open('demo6.json', 'r') as f:
+    print(json.load(f))
+    print(type(json.load(f))) why i am getting error
