@@ -4,7 +4,7 @@ import requests
 st.set_page_config(page_title='IPL Analysis 2.0')
 
 st.sidebar.title('IPL Dashboard 2.0')
-option = st.sidebar.selectbox('What do you want to know about?', ['Team','Player','Team Vs Team','Batter','Bowler'])
+option = st.sidebar.selectbox('What do you want to know about?', ['Team', 'Team Vs Team','Batter','Bowler'])
 
 team_images = {
     'Chennai Super Kings': 'images/csk.jpg',
@@ -36,24 +36,24 @@ if option == 'Team':
     btn = st.sidebar.button('View record')
 
     if btn:
-        st.header(team)
+        col1, col2 = st.columns(2)
+        with col1:
+            st.header(team)
+        with col2:
+            st.image(team_images[team])
 
-        team_record = requests.get('http://127.0.0.1:5000/api/team-record?team={}'.format(team))
+        team_record_ = requests.get('http://127.0.0.1:5000/api/team-record?team={}'.format(team))
 
-        st.json(team_record.json())
+        team_record = team_record_.json()
 
-    
+        st.subheader('Overall record')
+        for i in team_record[team]['overall']:
+            st.text(i + ' : ' + str(team_record[team]['overall'][i]))
 
-elif option == 'Player':
-    response = requests.get('http://127.0.0.1:5000/api/players')
-    players = sorted(response.json()['Players'])
+        st.subheader('Against every team')
+        for i in team_record[team]['against']:
+            st.text(i + ' : ' + str(team_record[team]['against'][i]))
 
-    st.sidebar.selectbox('Select player', players)
-
-    btn = st.sidebar.button('View record')
-
-    if btn:
-        pass
 
 elif option == 'Team Vs Team':
     response = requests.get('http://127.0.0.1:5000/api/teams')
@@ -87,10 +87,54 @@ elif option == 'Batter':
     response = requests.get('http://127.0.0.1:5000/api/players')
     players = sorted(response.json()['Players'])
 
-    st.sidebar.selectbox('Select Batter', players)
+    batter = st.sidebar.selectbox('Select Batter', players)
+
+    btn = st.sidebar.button('View record')
+
+    if btn:
+        col1, col2 = st.columns(2)
+        with col1:
+            st.header(batter)
+        # with col2:
+        #     st.image(team_images[team])
+
+        response = requests.get('http://127.0.0.1:5000/api/batter-record?batsman={}'.format(batter))
+
+        batter_record = response.json()
+
+        st.subheader('Overall record')
+        for i in batter_record[batter]['all']:
+            st.text(i + ' : ' + str(batter_record[batter]['all'][i]))
+
+        st.subheader('Against every team')
+        for i in batter_record[batter]['against']:
+            st.text(i + ' : ' + str(batter_record[batter]['against'][i]))
 
 elif option == 'Bowler':
     response = requests.get('http://127.0.0.1:5000/api/players')
     players = sorted(response.json()['Players'])
 
-    st.sidebar.selectbox('Select Bowler', players)
+    bowler = st.sidebar.selectbox('Select Bowler', players)
+
+    btn = st.sidebar.button('View record')
+
+    if btn:
+        col1, col2 = st.columns(2)
+        with col1:
+            st.header(bowler)
+        # with col2:
+        #     st.image(team_images[team])
+
+        response = requests.get('http://127.0.0.1:5000/api/bowler-record?bowler={}'.format(bowler))
+
+        bowler_record = response.json()
+
+        st.subheader('Overall record')
+        for i in bowler_record[bowler]['all']:
+            st.text(i + ' : ' + str(bowler_record[bowler]['all'][i]))
+
+        st.subheader('Against every team')
+        for i in bowler_record[bowler]['against']:
+            st.text(i + ' : ' + str(bowler_record[bowler]['against'][i]))
+
+            

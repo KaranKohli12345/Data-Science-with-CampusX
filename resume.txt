@@ -1,0 +1,24 @@
+no photo
+
+name
+phone no.
+email id
+linkedin
+location (short)- Dehradun
+
+summary (optional) (not recommended)
+
+education (till 10th)
+
+certification 
+
+projects name
+skill/software name
+problem solved
+
+experience
+tech skills
+
+leadership and skills
+
+achievements
